@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # --- Load model ---
 @st.cache_resource
 def load_model():
-    with open("/content/house_price_predictor.pkl", "rb") as f:
+    with open("house_price_predictor.pkl", "rb") as f:
         return joblib.load(f)
 
 model = load_model()
