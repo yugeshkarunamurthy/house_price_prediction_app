@@ -25,10 +25,10 @@ with st.form("prediction_form"):
 
     with col1:
         bedrooms = st.number_input("🛏️ Bedrooms", min_value=0, step=1, value=3)
-        bathrooms = st.number_input("🛁 Bathrooms", min_value=0.0, step=0.25, value=2.0)
+        bathrooms = st.number_input("🛁 Bathrooms", min_value=0, step=1, value=2)
         sqft_living = st.number_input("📏 Living Area (sqft)", min_value=100, step=10, value=1800)
         sqft_lot = st.number_input("🌳 Lot Area (sqft)", min_value=500, step=10, value=5000)
-        floors = st.number_input("🏢 Number of Floors", min_value=1.0, step=0.5, value=1.0)
+        floors = st.number_input("🏢 Number of Floors", min_value=1, step=1, value=1)
 
     with col2:
         waterfront = st.selectbox("🌊 Waterfront View", [0, 1], format_func=lambda x: "Yes" if x else "No", index=0)
